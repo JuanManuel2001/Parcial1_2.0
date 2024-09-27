@@ -36,7 +36,7 @@ const LoginPage = () => {
     <div className="login-container">
       <header className="login-header">
         <img
-          src="https://i.imgur.com/CkCN3VY.png"
+          src="https://img.freepik.com/vector-gratis/conjunto-lindos-robots-vintage_331172-1430.jpg?size=626&ext=jpg "
           alt="Robot Lovers Banner"
           className="login-banner"
         />

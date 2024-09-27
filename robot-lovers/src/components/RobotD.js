@@ -1,4 +1,5 @@
 import React from "react";
+import "./RobotD.css"
 
 
 const RobotD = ({ robot }) => {
