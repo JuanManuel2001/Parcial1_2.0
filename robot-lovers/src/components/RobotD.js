@@ -1,10 +1,12 @@
-import React from "react";
-import "./RobotD.css"
-
+import React from 'react';
+import { useTranslation } from 'react-i18next';
+import "./RobotD.css";
 
 const RobotD = ({ robot }) => {
+  const { t } = useTranslation(); // Hook de traducción
+
   if (!robot) {
-    return <p>Selecciona un robot para ver los detalles.</p>;
+    return <p>{t('Additional Features')}</p>;
   }
 
   return (
@@ -16,12 +18,12 @@ const RobotD = ({ robot }) => {
         className="robot-image"
       />
       <ul className="robot-info">
-        <li><strong>Año de Fabricación:</strong> {robot.añoFabricacion}</li>
-        <li><strong>Capacidad de Procesamiento:</strong> {robot.capacidadProcesamiento}</li>
-        <li><strong>Humor:</strong> {robot.humor}</li>
+        <li><strong>{t('Year of Manufacturing')}:</strong> {robot.añoFabricacion}</li>
+        <li><strong>{t('Processing Capacity')}:</strong> {robot.capacidadProcesamiento}</li>
+        <li><strong>{t('Humor')}:</strong> {robot.humor}</li>
       </ul>
     </div>
   );
 };
 
-export default RobotD;
+export default RobotD;
